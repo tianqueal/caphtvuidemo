@@ -1,0 +1,102 @@
+# Project type [web_app, test_runner]
+project_type: web_app
+
+# Default profile, Tizen API version
+profile: tv-samsung
+api_version: "2.3"
+
+# Build type [Debug/ Release/ Test]
+build_type: Debug
+
+# Output name for application
+output_name: caphtvuidemo
+
+# Output path for build
+output_path: ""
+
+# Enable size optimization of wgt for web workspace
+opt: false
+
+# Signing profile to be used for Tizen package signing
+# If value is empty: "", active signing profile will be used
+# Else If value is ".", default signing profile will be used
+signing_profile: ""
+
+# list of certs in web project (.trust-anchor)
+trust_anchor: []
+
+# list of files in web project (.html,.css etc) and resources
+files:
+  - .git/HEAD
+  - .git/config
+  - .git/description
+  - .git/hooks/applypatch-msg.sample
+  - .git/hooks/commit-msg.sample
+  - .git/hooks/fsmonitor-watchman.sample
+  - .git/hooks/post-update.sample
+  - .git/hooks/pre-applypatch.sample
+  - .git/hooks/pre-commit.sample
+  - .git/hooks/pre-merge-commit.sample
+  - .git/hooks/pre-push.sample
+  - .git/hooks/pre-rebase.sample
+  - .git/hooks/pre-receive.sample
+  - .git/hooks/prepare-commit-msg.sample
+  - .git/hooks/push-to-checkout.sample
+  - .git/hooks/update.sample
+  - .git/info/exclude
+  - .gitignore
+  - .project
+  - .settings/.jsdtscope
+  - .settings/org.eclipse.wst.css.core.prefs
+  - .settings/org.eclipse.wst.jsdt.ui.superType.container
+  - .settings/org.eclipse.wst.jsdt.ui.superType.name
+  - .tproject
+  - .vscode/launch.json
+  - README.md
+  - css/fonts.css
+  - css/style.css
+  - fonts/.DS_Store
+  - fonts/SamsungOne-300.woff2
+  - fonts/SamsungOne-400.woff2
+  - fonts/SamsungOne-700.woff2
+  - fonts/SamsungOne-800.woff2
+  - icon.png
+  - img/tv_off.png
+  - img/tv_on.png
+  - index.html
+  - js/app.js
+  - lib/caph/3.1.0/bower.json
+  - lib/caph/3.1.0/bower_components/hammerjs/hammer.min.js
+  - lib/caph/3.1.0/bower_components/jquery/dist/jquery.min.js
+  - lib/caph/3.1.0/bower_components/lodash/lodash.min.js
+  - lib/caph/3.1.0/bower_components/velocity/velocity.min.js
+  - lib/caph/3.1.0/bower_components/velocity/velocity.ui.min.js
+  - lib/caph/3.1.0/caph-jquery.min.js
+  - lib/caph/3.1.0/caph-stripe.min.css
+  - lib/caph/3.1.0/caph.min.css
+
+# list of files to exclude based on the matched patterns
+excludes:
+  - .Build/*
+  - .buildResult/*
+  - .csproj
+  - .externalToolBuilders/*
+  - .gn
+  - .obj/*
+  - .package/*
+  - .project
+  - .rds_delta
+  - .sdk_delta.info
+  - .settings/*
+  - .sign/*
+  - .tizen-ui-builder-tool.xml
+  - .tproject
+  - .wgt
+  - Build/*
+  - Debug/*
+  - Directory.Build.targets
+  - webUnitTest/*
+
+# project dependencies
+deps: []
+

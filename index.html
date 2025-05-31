@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- include CAPH 3.1.0 default package -->
+    <link
+      href="lib/caph/3.1.0/caph.min.css"
+      rel="stylesheet"
+      type="text/stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- include jQuery file (you can use jQuery in your environment) -->
+    <script
+      src="lib/caph/3.1.0/bower_components/jquery/dist/jquery.min.js"
+      type="text/javascript"
+    ></script>
+
+    <!-- include hammer js for touch feature (uncomment to enable touch feature) -->
+    <!-- <script src="lib/caph/3.1.0/hammerjs/hammer.min.js" type="text/javascript"></script>  -->
+
+    <!-- include the CAPH Package for jquery -->
+    <script
+      src="lib/caph/3.1.0/caph-jquery.min.js"
+      type="text/javascript"
+    ></script>
+
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <main class="wrapper">
+      <header class="header">
+        <h1>Turn on the TVs you want</h1>
+      </header>
+
+      <section id="tvs-container" class="content" role="group" aria-label="TVs">
+        <button
+          class="tv top"
+          aria-pressed="false"
+          focusable
+          data-focusable-initial-focus="true"
+        >
+          Smart TV - 1
+        </button>
+        <button class="tv top" aria-pressed="false" focusable>
+          Smart TV - 2
+        </button>
+        <button class="tv top" aria-pressed="false" focusable>
+          Smart TV - 3
+        </button>
+        <button class="tv top" aria-pressed="false" focusable>
+          Smart TV - 4
+        </button>
+        <button class="tv top" aria-pressed="false" focusable>
+          Smart TV - 5
+        </button>
+        <button class="tv bottom" aria-pressed="false" focusable>
+          Smart TV - A
+        </button>
+        <button class="tv bottom" aria-pressed="false" focusable>
+          Smart TV - B
+        </button>
+        <button class="tv bottom" aria-pressed="false" focusable>
+          Smart TV - C
+        </button>
+        <button class="tv bottom" aria-pressed="false" focusable>
+          Smart TV - D
+        </button>
+        <button class="tv bottom" aria-pressed="false" focusable>
+          Smart TV - E
+        </button>
+      </section>
+
+      <footer class="footer">
+        <p>That's all!</p>
+      </footer>
+    </main>
+  </body>
+</html>

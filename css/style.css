@@ -1,0 +1,67 @@
+@import url('./fonts.css');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'SamsungOne', sans-serif;
+  font-weight: 700;
+  color-scheme: light dark;
+  text-align: center;
+}
+
+body {
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  gap: 20px;
+  padding: 20px;
+  font-size: large;
+  margin: 0 20px;
+}
+
+#tvs-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+
+  .tv {
+    display: inherit;
+    align-items: end;
+    border: none;
+    height: 300px;
+    padding: 5px;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: large;
+    background-color: transparent;
+    border-radius: 10px;
+    background-image: url('../img/tv_off.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.3s ease-in-out;
+
+    &.top.focused {
+      outline: 5px solid #dc2626;
+    }
+
+    &.bottom.focused {
+      outline: 5px solid #16a34a;
+    }
+
+    &[aria-pressed='true'] {
+      background-image: url('../img/tv_on.png');
+    }
+  }
+}

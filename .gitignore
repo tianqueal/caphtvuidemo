@@ -1,0 +1,47 @@
+# Tizen/Samsung TV build artifacts and packages
+.buildResult/
+.Build/
+.package/
+.wgt
+*.wgt
+Build/
+Debug/
+Release/
+.obj/
+Directory.Build.targets
+.gn
+caphtvuidemo.csproj
+
+# Tizen Studio/Eclipse specific files
+.settings/
+.externalToolBuilders/
+.tizen-ui-builder-tool.xml
+.buildpath
+
+# Temporary or cache files
+.rds_delta
+.sdk_delta.info
+
+# Signing files
+.sign/
+
+# User-specific VS Code files 
+.vscode/*
+!.vscode/tasks.json
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Package manager dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+node_modules/
+bower_components/
+
+# Environment variables
+.env
