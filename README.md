@@ -101,7 +101,7 @@ caphtvuidemo/
 ├── config.xml          # Tizen application configuration file
 ├── icon.png            # Application icon
 ├── index.html          # Main HTML file for the application
-|-- README.md           # Project documentation (this file)
+├── README.md           # Project documentation (this file)
 └── tizen_web_project.yaml # Tizen web project build configuration
 ```
 
